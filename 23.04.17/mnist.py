@@ -75,9 +75,6 @@ if device=="cuda":
     os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
     os.environ['CUDA_VISIBLE_DEVICES']="0"
 
-writer = SummaryWriter()
-writer.close()
-
 
 # Define model
 class NeuralNetwork(nn.Module):
