@@ -1,0 +1,72 @@
+2023-04-24 20:44:04.740 | Train_loss | models.mymodel.train:train_with_hyper_param:53 - Epoch 01: 2.419 training loss
+2023-04-24 20:44:04.744 | INFO     | models.mymodel.eval:evaluate:13 - Test start
+2023-04-24 20:44:04.760 | INFO     | __main__:main:88 - The model has been trained. The test accuracy is 0.6181.
+2023-04-24 20:50:14.587 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 2.419 training loss
+2023-04-24 20:50:14.591 | INFO     | models.mymodel.eval:evaluate:13 - Test start
+2023-04-24 20:50:14.608 | INFO     | __main__:main:88 - The model has been trained. The test accuracy is 0.6181.
+2023-04-24 21:27:37.421 | INFO     | models.mymodel.train:train_with_hyper_param:37 - Train start
+2023-04-24 21:27:57.432 | INFO     | models.mymodel.train:train_with_hyper_param:37 - Train start
+2023-04-24 21:30:23.256 | INFO     | models.mymodel.train:train_with_hyper_param:37 - Train start
+2023-04-24 21:32:14.178 | INFO     | models.mymodel.train:train_with_hyper_param:37 - Train start
+2023-04-24 21:32:23.110 | Train_loss | models.mymodel.train:train_with_hyper_param:54 - Epoch 01: 0.03904 training loss
+2023-04-24 21:32:31.033 | Train_loss | models.mymodel.train:train_with_hyper_param:54 - Epoch 02: 0.02407 training loss
+2023-04-24 21:32:38.900 | Train_loss | models.mymodel.train:train_with_hyper_param:54 - Epoch 03: 0.0583 training loss
+2023-04-24 21:32:46.779 | Train_loss | models.mymodel.train:train_with_hyper_param:54 - Epoch 04: 0.1329 training loss
+2023-04-24 21:32:54.595 | Train_loss | models.mymodel.train:train_with_hyper_param:54 - Epoch 05: 0.05407 training loss
+2023-04-24 21:32:54.602 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:33:52.852 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:34:02.034 | Train_loss | models.mymodel.train:train_with_hyper_param:53 - Epoch 01: 0.03904 training loss
+2023-04-24 21:34:10.076 | Train_loss | models.mymodel.train:train_with_hyper_param:53 - Epoch 02: 0.02407 training loss
+2023-04-24 21:34:31.380 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.03904 training loss
+2023-04-24 21:35:44.352 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:35:53.666 | Train_loss | models.mymodel.train:train_with_hyper_param:53 - Epoch 01: 0.03904 training loss
+2023-04-24 21:36:01.772 | Train_loss | models.mymodel.train:train_with_hyper_param:53 - Epoch 02: 0.02407 training loss
+2023-04-24 21:36:30.067 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:37:26.658 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:37:36.058 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.1473 training loss
+2023-04-24 21:37:45.690 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 02: 0.05164 training loss
+2023-04-24 21:37:55.364 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 03: 0.07491 training loss
+2023-04-24 21:38:05.043 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 04: 0.02559 training loss
+2023-04-24 21:38:14.672 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 05: 0.0211 training loss
+2023-04-24 21:38:24.177 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 06: 0.01864 training loss
+2023-04-24 21:38:41.466 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:38:50.680 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.00945 training loss
+2023-04-24 21:38:58.855 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 02: 0.05679 training loss
+2023-04-24 21:39:07.007 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 03: 0.01627 training loss
+2023-04-24 21:39:15.036 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 04: 0.04861 training loss
+2023-04-24 21:39:23.140 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 05: 0.00318 training loss
+2023-04-24 21:39:23.146 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:40:43.939 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:40:53.204 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.0281 training loss
+2023-04-24 21:40:53.209 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:43:29.983 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:43:40.690 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.05419 training loss
+2023-04-24 21:43:40.698 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:44:43.325 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:44:53.875 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.04944 training loss
+2023-04-24 21:44:53.882 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:50:18.742 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:50:27.967 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.1087 training loss
+2023-04-24 21:50:27.974 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:50:40.965 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:50:50.015 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.03269 training loss
+2023-04-24 21:50:50.023 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:51:37.615 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:51:46.802 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.03887 training loss
+2023-04-24 21:51:46.810 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:51:57.394 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:52:06.674 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.04185 training loss
+2023-04-24 21:52:06.680 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:52:27.458 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:52:36.617 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.05265 training loss
+2023-04-24 21:52:36.624 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 21:53:45.589 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 21:53:55.491 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.03505 training loss
+2023-04-24 21:53:55.498 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 22:01:07.767 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 22:01:17.290 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.07612 training loss
+2023-04-24 22:01:17.298 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 22:05:21.887 | INFO     | models.mymodel.train:train_with_hyper_param:36 - Train start
+2023-04-24 22:05:31.115 | Train_loss | models.mymodel.train:train_with_hyper_param:52 - Epoch 01: 0.03083 training loss
+2023-04-24 22:05:31.122 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-04-24 22:05:31.183 | INFO     | __main__:main:88 - The model has been trained. The test accuracy is 0.9746.
