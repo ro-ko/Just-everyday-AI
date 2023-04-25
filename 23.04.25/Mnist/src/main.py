@@ -43,6 +43,7 @@ def main(model='mymodel',
     :param learning_rate: learning rate
     """
 
+    logger.add('file.log')
     # Step 0. Initialization
     logger.info("The main procedure has started with the following parameters:")
     device = 'cuda' if torch.cuda.is_available() else 'cpu'

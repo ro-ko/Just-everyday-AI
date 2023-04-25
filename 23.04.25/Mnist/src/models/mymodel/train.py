@@ -6,8 +6,8 @@ from models.mymodel.model import MyModel
 from tqdm import tqdm
 from utils import log_param
 from loguru import logger
+from datetime import datetime
 
-logger.level("Train_loss", no=21, color="<yellow>")
 
 class MyTrainer:
     def __init__(self, device, in_dim, out_dim):
@@ -32,8 +32,8 @@ class MyTrainer:
         optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
         model.train()
-        pbar = tqdm(range(1,epochs+1), position=0, leave=False, colour='green', desc='epoch')
         logger.info('Train start')
+        pbar = tqdm(range(1,epochs+1), position=0, leave=False, colour='green', desc='epoch')
         for epoch in pbar:
             avg_loss = 0
             for features, labels in tqdm(data_loader, position=1, leave=False, colour='red', desc='batch'):
@@ -49,7 +49,13 @@ class MyTrainer:
                 optimizer.step()
 
                 avg_loss += loss / total_batches
-            logger.log('Train_loss', 'Epoch {:02}: {:.4} training loss'.format(epoch, loss.item()))
+                
+            pbar_str = "epoch: [loss = %.4f]" % loss.item()
+            pbar.set_description(pbar_str)
+            pbar.write('Epoch {:02}: {:.4} training loss'.format(epoch, loss.item()))
+
+            with open("file.log", "a") as f:
+                f.write(datetime.today().strftime("%Y-%m-%d %H:%M:%S") + ' | Train loss | Epoch {:02}: {:.4} training loss'.format(epoch, loss.item()))
 
         pbar.close()
 
