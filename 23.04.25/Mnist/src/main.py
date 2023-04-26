@@ -31,7 +31,7 @@ def run_mymodel(device, train_data, test_data, hyper_param):
 def main(model='mymodel',
          seed=-1,
          batch_size=100,
-         epochs=1,
+         epochs=15,
          learning_rate=0.001):
     """
     Handle user arguments of ml-project-template
