@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+import os
 import random
 import numpy as np
 import torch
@@ -47,3 +47,10 @@ def show(imgs, labels):
         axs[0,i].set_title(labels[i])
         axs[0,i].set(xticklabels=[], yticklabels=[], xticks=[], yticks=[])
     plt.savefig('image')
+
+def createDir(dir):
+    try:
+        if not os.path.exists(dir):
+            os.makedirs(dir)
+    except OSError:
+        print("Error: Failed to create the directory.")

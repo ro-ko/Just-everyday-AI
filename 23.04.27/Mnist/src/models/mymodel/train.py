@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import torch
 from models.mymodel.model import MyModel
 from tqdm import tqdm
-from utils import log_param
 from loguru import logger
 from datetime import datetime
+from utils import createDir
 
 class MyTrainer:
     def __init__(self, device, in_dim, out_dim):
@@ -21,6 +22,9 @@ class MyTrainer:
         learning_rate = hyper_param['learning_rate']
         checkpoint = hyper_param['checkpoint']
         path = hyper_param['path']
+        cfg_name = hyper_param['cfg_name']
+        checkpoint_dir = './experiments/checkpoint/'+str(cfg_name)
+        createDir(checkpoint_dir)
 
         data_loader = torch.utils.data.DataLoader(dataset=train_data,
                                                   batch_size=batch_size,
@@ -63,7 +67,7 @@ class MyTrainer:
             pbar.set_description(pbar_str)
             pbar.write('Epoch {:02}: {:.4} training loss'.format(epoch, loss.item()))
             
-            with open("file.log", "a") as f:
+            with open(os.path.join("./experiments/log", cfg_name + ".log"), "a") as f:
                 f.write(datetime.today().strftime("%Y-%m-%d %H:%M:%S") + ' | Train loss | Epoch {:02}: {:.4} training loss\n'.format(epoch, loss.item()))
             if epoch % 5 == 0:
                 torch.save({
@@ -71,7 +75,7 @@ class MyTrainer:
                     'model_state_dict' : model.state_dict(),
                     'optimizer_state_dict' : optimizer.state_dict(),
                     'loss' : avg_loss,
-                },'./checkpoint/model_'+str(epoch)+'.pt')
+                }, checkpoint_dir + '/model_' + str(epoch) + '.pt')
         pbar.close()
         
 

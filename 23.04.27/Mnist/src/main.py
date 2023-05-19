@@ -1,17 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os.path
+import os
 import sys
 import fire
 import torch
 from pathlib import Path
 
-from utils import set_random_seed
+from utils import set_random_seed, createDir
 from data import Mnist
 from models.mymodel.train import MyTrainer
 from models.mymodel.eval import MyEvaluator
 from utils import log_param
 from loguru import logger
+
+from experiments import exp_hyper_param
 
 
 def run_mymodel(device, train_data, test_data, hyper_param):
@@ -28,31 +30,29 @@ def run_mymodel(device, train_data, test_data, hyper_param):
     return accuracy
 
 
-def main(model='mymodel',
-         seed=-1,
-         batch_size=100,
-         epochs=10,
-         learning_rate=0.001,
-         checkpoint=False,
-         path = ...,
-         ):
+def main(cfg_name="default",):
     """
     Handle user arguments of ml-project-template
-
-    :param model: name of model to be trained and tested
-    :param seed: random_seed (if -1, a default seed is used)
-    :param batch_size: size of batch
-    :param epochs: number of training epochs
-    :param learning_rate: learning rate
+    :param cfg_name: config file name
     """
-    logger.add('file.log')
+
     # Step 0. Initialization
+    createDir("./experiments/log")
+    logger.add(os.path.join("./experiments/log", cfg_name + ".log"))
     logger.info("The main procedure has started with the following parameters:")
+    args = exp_hyper_param.parse(cfg_name)
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    set_random_seed(seed=seed, device=device)
+    set_random_seed(seed=args.seed, device=device)
+    
+    # set gpu
+    if device=='cuda':
+        os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+        os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
+    
+    # config
     param = dict()
-    param['model'] = model
-    param['seed'] = seed
+    param['model'] = args.model
+    param['seed'] = args.seed
     param['device'] = device
     log_param(param)
 
@@ -68,15 +68,15 @@ def main(model='mymodel',
 
     logger.info("Training the model has begun with the following hyperparameters:")
     hyper_param = dict()
-    hyper_param['batch_size'] = batch_size
-    hyper_param['epochs'] = epochs
-    hyper_param['learning_rate'] = learning_rate
-    hyper_param['checkpoint'] = checkpoint
-    hyper_param['path'] = path
+    hyper_param['batch_size'] = args.batch_size
+    hyper_param['epochs'] = args.epochs
+    hyper_param['learning_rate'] = args.learning_rate
+    hyper_param['checkpoint'] = args.checkpoint
+    hyper_param['path'] = args.path
+    hyper_param['cfg_name'] = cfg_name
     log_param(hyper_param)
 
-    if model == 'mymodel':
-        logger.add('file.log')
+    if args.model == 'mymodel':
         accuracy = run_mymodel(device=device,
                                train_data=train_data,
                                test_data=test_data,
@@ -86,7 +86,7 @@ def main(model='mymodel',
         #   such as 'run_my_model' to the below
         # - If models' hyperparamters are varied, need to implement a function loading a configuration file
     else:
-        logger.error("The given \"{}\" is not supported...".format(model))
+        logger.error("The given \"{}\" is not supported...".format(args.model))
         return
 
     # Step 3. Report and save the final results

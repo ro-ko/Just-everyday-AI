@@ -1,0 +1,28 @@
+
+2023-05-19 17:30:31.531 | INFO     | __main__:main:42 - The main procedure has started with the following parameters:
+2023-05-19 17:30:31.532 | INFO     | utils:log_param:38 - model               :                                           mymodel
+2023-05-19 17:30:31.532 | INFO     | utils:log_param:38 - seed                :                                                -1
+2023-05-19 17:30:31.532 | INFO     | utils:log_param:38 - device              :                                               cpu
+2023-05-19 17:30:31.552 | INFO     | __main__:main:63 - The datasets are loaded where their statistics are as follows:
+2023-05-19 17:30:31.552 | INFO     | __main__:main:64 - - # of training instances: 60000
+2023-05-19 17:30:31.553 | INFO     | __main__:main:65 - - # of test instances: 10000
+2023-05-19 17:30:31.553 | INFO     | __main__:main:69 - Training the model has begun with the following hyperparameters:
+2023-05-19 17:30:31.553 | INFO     | utils:log_param:38 - batch_size          :                                               100
+2023-05-19 17:30:31.553 | INFO     | utils:log_param:38 - epochs              :                                                10
+2023-05-19 17:30:31.553 | INFO     | utils:log_param:38 - learning_rate       :                                              0.01
+2023-05-19 17:30:31.553 | INFO     | utils:log_param:38 - checkpoint          :                                             False
+2023-05-19 17:30:31.553 | INFO     | utils:log_param:38 - path                :               ./experiments/checkpoint/model_5.pt
+2023-05-19 17:30:31.553 | INFO     | utils:log_param:38 - cfg_name            :                                           default
+2023-05-19 17:30:31.555 | INFO     | models.mymodel.train:train_with_hyper_param:48 - Train start
+2023-05-19 17:31:00 | Train loss | Epoch 01: 0.0612 training loss
+2023-05-19 17:31:27 | Train loss | Epoch 02: 0.0176 training loss
+2023-05-19 17:31:55 | Train loss | Epoch 03: 0.06624 training loss
+2023-05-19 17:32:23 | Train loss | Epoch 04: 0.03336 training loss
+2023-05-19 17:32:50 | Train loss | Epoch 05: 0.05878 training loss
+2023-05-19 17:33:19 | Train loss | Epoch 06: 0.1393 training loss
+2023-05-19 17:33:48 | Train loss | Epoch 07: 0.04359 training loss
+2023-05-19 17:34:16 | Train loss | Epoch 08: 0.005916 training loss
+2023-05-19 17:34:45 | Train loss | Epoch 09: 0.01019 training loss
+2023-05-19 17:35:14 | Train loss | Epoch 10: 0.01553 training loss
+2023-05-19 17:35:14.779 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-05-19 17:35:17.340 | INFO     | __main__:main:93 - The model has been trained. The test accuracy is 0.966.
