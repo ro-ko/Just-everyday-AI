@@ -3,11 +3,13 @@
 
 import os
 import torch
+from torch.utils.tensorboard import SummaryWriter
 from models.mymodel.model import MyModel
 from tqdm import tqdm
 from loguru import logger
 from datetime import datetime
 from utils import createDir
+
 
 class MyTrainer:
     def __init__(self, device, in_dim, out_dim):
@@ -45,6 +47,7 @@ class MyTrainer:
         else: start = 1
 
         model.train()
+        writer = SummaryWriter()
         logger.info("Train start")
         pbar = tqdm(range(start, epochs+1), position=0, leave=False, colour='green', desc='epoch')
         for epoch in pbar:
@@ -67,6 +70,7 @@ class MyTrainer:
             pbar.set_description(pbar_str)
             pbar.write('Epoch {:02}: {:.4} training loss'.format(epoch, loss.item()))
             
+            writer.add_scalar("Loss/train", loss, epoch)
             with open(os.path.join("./experiments/log", cfg_name + ".log"), "a") as f:
                 f.write(datetime.today().strftime("%Y-%m-%d %H:%M:%S") + ' | Train loss | Epoch {:02}: {:.4} training loss\n'.format(epoch, loss.item()))
             if epoch % 5 == 0:
@@ -77,6 +81,6 @@ class MyTrainer:
                     'loss' : avg_loss,
                 }, checkpoint_dir + '/model_' + str(epoch) + '.pt')
         pbar.close()
-        
+        writer.close()
 
         return model

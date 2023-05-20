@@ -26,3 +26,63 @@
 2023-05-19 17:35:14 | Train loss | Epoch 10: 0.01553 training loss
 2023-05-19 17:35:14.779 | INFO     | models.mymodel.eval:evaluate:12 - Test start
 2023-05-19 17:35:17.340 | INFO     | __main__:main:93 - The model has been trained. The test accuracy is 0.966.
+2023-05-20 21:53:56.613 | INFO     | __main__:main:42 - The main procedure has started with the following parameters:
+2023-05-20 21:53:56.615 | INFO     | utils:log_param:38 - model               :                                           mymodel
+2023-05-20 21:53:56.615 | INFO     | utils:log_param:38 - seed                :                                                -1
+2023-05-20 21:53:56.615 | INFO     | utils:log_param:38 - device              :                                               cpu
+2023-05-20 21:53:56.715 | INFO     | __main__:main:63 - The datasets are loaded where their statistics are as follows:
+2023-05-20 21:53:56.715 | INFO     | __main__:main:64 - - # of training instances: 60000
+2023-05-20 21:53:56.715 | INFO     | __main__:main:65 - - # of test instances: 10000
+2023-05-20 21:53:56.715 | INFO     | __main__:main:69 - Training the model has begun with the following hyperparameters:
+2023-05-20 21:53:56.715 | INFO     | utils:log_param:38 - batch_size          :                                               100
+2023-05-20 21:53:56.716 | INFO     | utils:log_param:38 - epochs              :                                                10
+2023-05-20 21:53:56.716 | INFO     | utils:log_param:38 - learning_rate       :                                              0.01
+2023-05-20 21:53:56.716 | INFO     | utils:log_param:38 - checkpoint          :                                             False
+2023-05-20 21:53:56.716 | INFO     | utils:log_param:38 - path                :               ./experiments/checkpoint/model_5.pt
+2023-05-20 21:53:56.716 | INFO     | utils:log_param:38 - cfg_name            :                                           default
+2023-05-20 21:53:56.768 | INFO     | models.mymodel.train:train_with_hyper_param:51 - Train start
+2023-05-20 21:54:25 | Train loss | Epoch 01: 0.1141 training loss
+2023-05-20 21:54:53 | Train loss | Epoch 02: 0.06607 training loss
+2023-05-20 21:55:21 | Train loss | Epoch 03: 0.02799 training loss
+2023-05-20 21:55:49 | Train loss | Epoch 04: 0.02923 training loss
+2023-05-20 21:56:17 | Train loss | Epoch 05: 0.03602 training loss
+2023-05-20 21:56:45 | Train loss | Epoch 06: 0.07836 training loss
+2023-05-20 21:57:13 | Train loss | Epoch 07: 0.01443 training loss
+2023-05-20 21:57:43 | Train loss | Epoch 08: 0.07039 training loss
+2023-05-20 21:58:11 | Train loss | Epoch 09: 0.005727 training loss
+2023-05-20 21:58:39 | Train loss | Epoch 10: 0.002317 training loss
+2023-05-20 21:58:39.372 | INFO     | models.mymodel.eval:evaluate:12 - Test start
+2023-05-20 21:58:42.272 | INFO     | __main__:main:93 - The model has been trained. The test accuracy is 0.9395.
+2023-05-20 21:58:47.095 | INFO     | __main__:main:42 - The main procedure has started with the following parameters:
+2023-05-20 21:58:47.096 | INFO     | utils:log_param:38 - model               :                                           mymodel
+2023-05-20 21:58:47.096 | INFO     | utils:log_param:38 - seed                :                                                -1
+2023-05-20 21:58:47.096 | INFO     | utils:log_param:38 - device              :                                               cpu
+2023-05-20 21:58:47.167 | INFO     | __main__:main:63 - The datasets are loaded where their statistics are as follows:
+2023-05-20 21:58:47.167 | INFO     | __main__:main:64 - - # of training instances: 60000
+2023-05-20 21:58:47.168 | INFO     | __main__:main:65 - - # of test instances: 10000
+2023-05-20 21:58:47.168 | INFO     | __main__:main:69 - Training the model has begun with the following hyperparameters:
+2023-05-20 21:58:47.168 | INFO     | utils:log_param:38 - batch_size          :                                               100
+2023-05-20 21:58:47.168 | INFO     | utils:log_param:38 - epochs              :                                                10
+2023-05-20 21:58:47.168 | INFO     | utils:log_param:38 - learning_rate       :                                              0.01
+2023-05-20 21:58:47.168 | INFO     | utils:log_param:38 - checkpoint          :                                             False
+2023-05-20 21:58:47.168 | INFO     | utils:log_param:38 - path                :               ./experiments/checkpoint/model_5.pt
+2023-05-20 21:58:47.168 | INFO     | utils:log_param:38 - cfg_name            :                                           default
+2023-05-20 21:58:47.178 | INFO     | models.mymodel.train:train_with_hyper_param:51 - Train start
+2023-05-20 21:59:15 | Train loss | Epoch 01: 0.06591 training loss
+2023-05-20 21:59:44 | Train loss | Epoch 02: 0.02632 training loss
+2023-05-20 22:34:18.045 | INFO     | __main__:main:42 - The main procedure has started with the following parameters:
+2023-05-20 22:34:18.046 | INFO     | utils:log_param:38 - model               :                                           mymodel
+2023-05-20 22:34:18.046 | INFO     | utils:log_param:38 - seed                :                                                -1
+2023-05-20 22:34:18.047 | INFO     | utils:log_param:38 - device              :                                               cpu
+2023-05-20 22:34:18.117 | INFO     | __main__:main:63 - The datasets are loaded where their statistics are as follows:
+2023-05-20 22:34:18.118 | INFO     | __main__:main:64 - - # of training instances: 60000
+2023-05-20 22:34:18.118 | INFO     | __main__:main:65 - - # of test instances: 10000
+2023-05-20 22:34:18.118 | INFO     | __main__:main:69 - Training the model has begun with the following hyperparameters:
+2023-05-20 22:34:18.118 | INFO     | utils:log_param:38 - batch_size          :                                               100
+2023-05-20 22:34:18.118 | INFO     | utils:log_param:38 - epochs              :                                                10
+2023-05-20 22:34:18.118 | INFO     | utils:log_param:38 - learning_rate       :                                              0.01
+2023-05-20 22:34:18.118 | INFO     | utils:log_param:38 - checkpoint          :                                             False
+2023-05-20 22:34:18.118 | INFO     | utils:log_param:38 - path                :               ./experiments/checkpoint/model_5.pt
+2023-05-20 22:34:18.118 | INFO     | utils:log_param:38 - cfg_name            :                                           default
+2023-05-20 22:34:18.125 | INFO     | models.mymodel.train:train_with_hyper_param:51 - Train start
+2023-05-20 22:34:46 | Train loss | Epoch 01: 0.1987 training loss
